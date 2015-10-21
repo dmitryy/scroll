@@ -7,9 +7,27 @@ for (var i = 0; i < count; i++) {
 }
 
 $(function () {
-    $('#btnDraw').click(function () {
+    $('#btnDraw100').click(function () {
         $('#test').empty();
-        for (var i = 0; i < items.length; i++) {
+        for (var i = 0; i < 100; i++) {
+            $('#test').append('<div>' + items[i].Name + '</div>');
+        }
+    });
+    $('#btnDraw1k').click(function () {
+        $('#test').empty();
+        for (var i = 0; i < 1000; i++) {
+            $('#test').append('<div>' + items[i].Name + '</div>');
+        }
+    });
+    $('#btnDraw10k').click(function () {
+        $('#test').empty();
+        for (var i = 0; i < 10000; i++) {
+            $('#test').append('<div>' + items[i].Name + '</div>');
+        }
+    });
+    $('#btnDraw100k').click(function () {
+        $('#test').empty();
+        for (var i = 0; i < 100000; i++) {
             $('#test').append('<div>' + items[i].Name + '</div>');
         }
     });
